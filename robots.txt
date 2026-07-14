@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rafatek.github.io/lp-jackpet-real/sitemap.xml
