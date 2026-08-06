@@ -36,24 +36,37 @@ Crie uma landing page institucional, responsiva (mobile-first) e de alta convers
 
 ### 2.3 Seção Banho e Tosa
 - Título: **"O mais completo Banho & Tosa!"**
-- Lista de serviços/preços (cards ou lista com ícones):
-  - Banho a partir de: R$ 45,00
+- Lista de serviços detalhados (sem menção a preços):
+  - Banho Profissional
+  - Banho Terapêutico
   - Banho com Ozônio
-  - Tosa bebê
+  - Tosa Higiênica
+  - Tosa Completa
+  - Tosa Bebê
   - Desembolo
-  - Variedade em tosas
-  - Hidratação
+  - Especialistas em Raças de Pelagem Dupla (Carding / Remoção de subpelo)
 - Botão CTA: "Entrar em contato!" → WhatsApp
 - Imagens de apoio (usar fotos da pasta de imagens do cliente, se disponíveis)
 
 ### 2.4 Seção Veterinária
 - Título: **"Veterinário especializado"**
-- Lista de serviços:
-  - Cirurgia
-  - Procedimentos
+- Procedimentos e Exames:
+  - Cirurgias & Cirurgia Geral
   - Vacinas
-  - Exames laboratoriais
-  - Tratamento semi-internamento
+  - Testes Rápidos
+  - Exames Laboratoriais
+  - Eletrocardiograma
+  - Raio-X
+  - Ultrassonografia
+  - Odontologia
+- Especialidades:
+  - Cardiologia
+  - Dermatologia
+  - Oncologia
+  - Nefrologia
+  - Gastroenterologia
+  - Cirurgia Geral
+  - Odontologia
 - Botão CTA: "Entrar em contato!" → WhatsApp
 
 ### 2.5 Seção Institucional / Diferenciais

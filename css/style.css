@@ -340,8 +340,8 @@ img {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
 
 .service-card {
@@ -352,12 +352,38 @@ img {
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
     border-bottom: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
     border-bottom-color: var(--clr-secondary);
+}
+
+.service-badge {
+    display: inline-block;
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 12px;
+    border-radius: var(--br-pill);
+    margin-bottom: 10px;
+}
+
+.service-card--featured {
+    border: 2px solid rgba(92, 196, 232, 0.35);
+    background: linear-gradient(180deg, #ffffff 0%, #f4fbfe 100%);
+}
+
+.service-card--featured:hover {
+    border-color: var(--clr-secondary);
 }
 
 .service-icon {
@@ -372,6 +398,7 @@ img {
     font-size: 2rem;
     margin: 0 auto 20px;
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
 .service-card:hover .service-icon {
@@ -381,16 +408,20 @@ img {
 
 .service-card h3 {
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    color: var(--clr-primary);
 }
 
 .service-card p {
     color: var(--clr-text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
 }
 
 .service-card strong {
     color: var(--clr-primary);
-    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 /* Veterinary */
@@ -429,23 +460,84 @@ img {
     margin-bottom: 30px;
 }
 
+.vet-services-group,
+.vet-specialties-group {
+    margin-bottom: 30px;
+}
+
+.vet-services-group h3,
+.vet-specialties-group h3 {
+    font-size: 1.25rem;
+    color: var(--clr-primary);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vet-services-group h3 i,
+.vet-specialties-group h3 i {
+    color: var(--clr-secondary);
+    font-size: 1.15rem;
+}
+
 .vet-list {
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+    margin-bottom: 0;
 }
 
 .vet-list li {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    gap: 10px;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--clr-primary);
 }
 
 .vet-list li i {
     color: var(--clr-secondary);
-    font-size: 1.3rem;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
+.specialties-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.specialty-tag {
+    background-color: rgba(92, 196, 232, 0.12);
+    color: var(--clr-primary);
+    padding: 8px 16px;
+    border-radius: var(--br-pill);
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(92, 196, 232, 0.25);
+    transition: all 0.2s ease;
+}
+
+.specialty-tag i {
+    color: var(--clr-secondary);
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.specialty-tag:hover {
+    background-color: var(--clr-secondary);
+    color: var(--clr-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(92, 196, 232, 0.3);
+}
+
+.specialty-tag:hover i {
+    color: var(--clr-white);
 }
 
 /* Institutional */
@@ -812,5 +904,14 @@ img {
     
     .cookie-buttons .btn {
         width: 100%;
+    }
+
+    .vet-list {
+        grid-template-columns: 1fr;
+    }
+
+    .specialty-tag {
+        font-size: 0.9rem;
+        padding: 6px 12px;
     }
 }
